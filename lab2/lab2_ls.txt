@@ -1,0 +1,11 @@
+.:
+total 8
+drw-rw-r-- 2 a.kozlovskaya a.kozlovskaya 4096 Sep 18 21:49 dir
+-rw-r----- 1 root          a.kozlovskaya    5 Sep 18 21:48 file
+-rw------- 1 a.kozlovskaya a.kozlovskaya    0 Sep 18 21:50 file1
+-rw-rw-rw- 1 a.kozlovskaya a.kozlovskaya    0 Sep 18 21:50 file2
+
+./dir:
+ls: cannot access ./dir/new_file: Permission denied
+total 0
+-????????? ? ? ? ?            ? new_file

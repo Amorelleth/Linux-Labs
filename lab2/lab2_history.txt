@@ -1,0 +1,39 @@
+    1  cd ~
+    2  mkdir test && cd ./test
+    3  touch file
+    4  ll
+    5  chmod 0 file
+    6  ll
+    7  echo "тест" >> file 
+    8  cat file
+    9  chmod u+w,go-w file 
+   10  ll
+   11  echo "test" >> file 
+   12  cat file
+   13  chmod g+r file 
+   14  ll
+   15  cat file
+   16  chmod u+r file 
+   17  ls -l
+   18  cat file
+   19  mkdir dir 
+   20  touch ./dir/new_file && echo "file 2" >> ./dir/new_file
+   21  ls ./dir
+   22  chmod ugo-x dir
+   23  cat dir/new_file 
+   24  rm dir/new_file 
+   25  chown root dir/new_file 
+   26  chgrp root dir/new_file 
+   27  umask 077
+   28  touch file1 && ll
+   29  umask 0
+   30  touch file2 && ll
+   31  su
+   32  ls
+   33  chown root file
+   34  chmod u+r,go-r file
+   35  exit
+   36  cat file
+   37  sudo chmod g+r file
+   38  cat file
+   39  history
